@@ -1,0 +1,9 @@
+#header {
+	background-image: url("../img/class/header.jpg");
+}
+#slideshow .item {
+	margin: 10px;
+}
+th {
+	text-align: center;
+}

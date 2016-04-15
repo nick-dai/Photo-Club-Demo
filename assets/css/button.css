@@ -1,0 +1,21 @@
+button {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.white-button:link, .white-button:visited {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 1px solid white;
+	padding: 10px;
+	margin: 10px;
+	color: white;
+	text-decoration: none;
+	/* Avoid adjoining margins:
+	   display: inline-block; or
+	   float it; or
+	   parents' overflow: anything other than visible; */
+	display: inline-block; 
+}
+.white-button:hover, .white-button:active {
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+}

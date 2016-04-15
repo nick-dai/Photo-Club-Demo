@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 微軟正黑體;
+	src: local("微軟正黑體"); /** Look for the local font that matches the required one. **/
+}
+html, body {
+	font-family: 微軟正黑體;
+	height: 100%;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+}
+.emphasis {
+	color: red;
+}

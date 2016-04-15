@@ -1,0 +1,32 @@
+/* Layout: One-page-scrolling */
+.page {
+	position: relative;
+	min-height: 100%;
+	z-index: 1;
+	background-position: center, center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;
+}
+/* Bottom-large header */
+.bottom-header {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	text-align: center;
+	padding: 20px;
+}
+@media screen and (max-width: 991px) {
+	.page {
+		float: left;
+		height: auto !important;
+		min-height: 100% !important;
+		z-index: 1;
+		background-position: center, center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: white;
+		text-align: center;
+	}
+}

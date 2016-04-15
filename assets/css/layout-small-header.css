@@ -1,0 +1,47 @@
+/* Layout: Small-header
+   1. #header
+   2.1. .section #section-1
+   2.2. .section #section-2
+   2.3. .section #section-3
+   2.4. .section #section-4
+   2.5. .section #footer */
+body {
+	padding-top: 50px;
+}
+#header {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover; /** Fit the background image to the parent's height or width. **/
+	margin-bottom: 0px;
+	color: white;
+}
+.section { /** Inner section presets. **/
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+#section-1 {
+	background-color: #A3E5DF;
+}
+#section-2 {
+	background-color: #0099CC;
+	color: white;
+}
+#section-3 {
+	background-color: #81D8D0;
+}
+#section-4 {
+	background-color: #3B2987;
+	color: white;
+}
+#footer {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background-color: #000000;
+	padding: 20px;
+	color: white;
+}

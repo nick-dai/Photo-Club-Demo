@@ -1,0 +1,18 @@
+#header {
+	background-image: url("../img/photoCamp/header.jpg");
+}
+#section-2 {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#notes {
+	text-align: left;
+}
+#section-6 {
+	display: none;
+}
+#google-form {
+	display: none;
+}
+.ver-align-top {
+	vertical-align: top;
+}

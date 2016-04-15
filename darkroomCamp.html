@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>暗房研習營</title>
+		<!-- jQuery from Google CDN -->
+		<script type="text/javascript" src="assets/jquery/jquery-1.11.3.min.js"></script>
+		<!-- Bootstrap and Javascript from Bootstrap CDN-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Owl Carousel -->
+		<link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
+		<link rel="stylesheet" href="assets/owl-carousel/owl.transitions.css">
+		<script type="text/javascript" src="assets/owl-carousel/owl.carousel.min.js"></script>
+		<!-- Custom CSS and scripts -->
+		<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/button.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/component-layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/dividers.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout-full-page-header.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/custom-darkroomCamp.css">
+		<!-- Animation -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		<script type="text/javascript" src="assets/wow/wow.min.js"></script>
+		<script type="text/javascript" src="assets/js/darkroomCamp.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#courses-slideshow").owlCarousel({
+					lazyLoad: true,
+					navigation: true, // Show next and prev buttons
+					slideSpeed: 300,
+					paginationSpeed: 400,
+					navigationText: ["上一張", "下一張"],
+					singleItem: true
+				});
+				$("#outing-slideshow").owlCarousel({
+					lazyLoad: true,
+					navigation: true, // Show next and prev buttons
+					slideSpeed: 300,
+					paginationSpeed: 400,
+					navigationText: ["上一張", "下一張"],
+					singleItem: true
+				});
+				$("#model-slideshow").owlCarousel({
+					lazyLoad: true,
+					navigation: true, // Show next and prev buttons
+					slideSpeed: 300,
+					paginationSpeed: 400,
+					navigationText: ["上一張", "下一張"],
+					singleItem: true
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top"><!-- Fix navbar on top. -->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						NCHU Photography Club
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="introduction.html">介紹</a></li>
+						<li><a href="class.html">社課</a></li>
+						<li><a href="membership.html">社員</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">活動 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="welcomeExpo.html">上學期迎新茶會展</a></li>
+								<li><a href="photoCamp.html">攝影研習營</a></li>
+								<li><a href="welcomeParty.html">下學期迎新茶會</a></li>
+								<li class="active"><a href="darkroomCamp.html">暗房研習營</a></li>
+								<li><a href="expo.html">期末成果展</a></li>
+							</ul>
+						</li>
+						<li><a href="gallery.html">成果照片</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div id="header">
+			<h1 id="title">
+				第 31 屆暗房研習營「
+				<ruby>
+					<rb>黑</rb><rp>（</rp><rt>ㄏㄟ</rt><rp>）</rp>
+					<rb>洗</rb><rp>（</rp><rt>ㄒㄧˇ</rt><rp>）</rp>
+					<rb>暗</rb><rp>（</rp><rt>ㄢ</rt><rp>）</rp>
+					<rb>紙</rb><rp>（</rp><rt>ㄓㄨㄚˋ</rt><rp>）</rp>
+				</ruby>
+				」
+			</h1>
+		</div>
+		<div id="content">
+			<div class="section" id="section-1">
+				<div class="container">
+					<img src="assets/ico/gallery-black.png" class="icon" alt="活動介紹" />
+					<h3><b>活動介紹</b></h3>
+					<div class="black-x-divider"></div>
+					<div class="row">
+						<div class="col-sm-offset-1 col-sm-5 col-sm-push-5">
+							<div class="dual-col-right">
+								<h1>攝影課程</h1>
+								<p><br>營隊中，將會教授各種不同的攝影相關課程，除了基本的光圈、快門、ISO 等相機三要素的調整外，這次的營隊中，「暗房」也是課程的重點課程之一。</p>
+							</div>
+						</div>
+						<div class="col-sm-5 col-sm-pull-5">
+							<div class="dual-col-left" id="courses-slideshow">
+								<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/darkroomCamp/courses/image-01.jpg" alt="P1"></div>
+								<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/darkroomCamp/courses/image-02.jpg" alt="P2"></div>
+								<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/darkroomCamp/courses/image-03.jpg" alt="P3"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-offset-1 col-sm-5">
+							<div class="dual-col-left">
+								<h1>暗房教學</h1>
+								<p>「暗房」是一間完全黑暗的房間，用於沖洗底片及放大相片，而隨著數位時代的進步，數位相機、手機的流行，使得暗房逐漸沒落。數位跟暗房相比，最大的不同是數位檔案易於複製、修改，而沖洗出來的底片，不容易被複製，具有其唯一性。<br><br>如果對暗房有興趣的話，本次營隊中也會教你如何親手沖洗出自己拍的底片，並放出一張專屬於自己的相片喔！</p>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="dual-col-right" id="outing-slideshow">
+								<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/darkroomCamp/darkroom/image-01.jpg" alt="P1"></div>
+								<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/darkroomCamp/darkroom/image-02.jpg" alt="P2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-offset-1 col-sm-5 col-sm-push-5">
+							<div class="dual-col-right">
+								<h1>外拍行程</h1>
+								<p>在營期的第三天，我們會走出教室，拿著底片相機（如果沒有底片相機也沒關係，本社會提供），實際將課堂的知識操作一遍。<br><br>像是這次我們將會走進苑裡的山腳國小、日式宿舍、藺草文化館、東里加風等地區。</p>
+							</div>
+						</div>
+						<div class="col-sm-5 col-sm-pull-5">
+							<div class="dual-col-left" id="model-slideshow">
+								<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/darkroomCamp/outing/image-01.jpg" alt="P1"></div>
+								<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/darkroomCamp/outing/image-02.jpg" alt="P2"></div>
+								<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/darkroomCamp/outing/image-03.jpg" alt="P3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section-2">
+				<div class="container">
+					<img src="assets/ico/info-white.png" class="icon" alt="活動資訊" />
+					<h3><b>活動資訊</b></h3>
+					<div class="white-x-divider"></div>
+					<div class="row tabled-row">
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/office-white.png" class="icon" alt="主辦單位" /></div>
+								<div class="tri-middle"><div class="white-y-divider"></div></div>
+								<div class="tri-right"><p>主辦單位：國立中興大學攝影研究社<br>指導單位：國立中興大學課外活動指導組</p></div>
+							</div>
+						</div>
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/person-white.png" class="icon" alt="招生對象" /></div>
+								<div class="tri-middle"><div class="white-y-divider"></div></div>
+								<div class="tri-right"><p>招生對象：全國大專院校及高中職在校生共 28 人（含大一新生保障名額 10 人、外校學生至多 5 人）</p></div>
+							</div>
+						</div>
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/time-white.png" class="icon" alt="活動時間" /></div>
+								<div class="tri-middle"><div class="white-y-divider"></div></div>
+								<div class="tri-right"><p>活動時間：<br>2015/03/27 (五) 18:00~21:30<br>2015/03/28 (六) 08:30~21:30<br>2015/03/29 (日) 08:00~21:30<br>＊3/30~31及4/7~11為沖片放相週，擇其兩日在本校暗房安排實作</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="row tabled-row">
+						<div class="col-sm-offset-1 col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/location-white.png" class="icon" alt="活動地點" /></div>
+								<div class="tri-middle"><div class="white-y-divider"></div></div>
+								<div class="tri-right"><p>活動地點：圓廳304，圓廳1F暗房，苗栗縣苑裡鎮</p></div>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/book-white.png" class="icon" alt="活動內容" /></div>
+								<div class="tri-middle"><div class="white-y-divider"></div></div>
+								<div class="tri-right"><p>活動內容：攝影概論，黑白美學，暗房概論，暗房實習(沖片放相教學實作)，3D攝影，外拍實習</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section-3">
+				<div class="container">
+					<img src="assets/ico/apply-black.png" class="icon" alt="報名資訊" />
+					<h3><b>報名資訊</b></h3>
+					<div class="black-x-divider"></div>
+					<div class="row tabled-row">
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/money-black.png" class="icon" alt="報名費用" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>報名費用：社員 $1200 / 非社員 $1400</p></div>
+							</div>
+						</div>
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/time-black.png" class="icon" alt="報名日期" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>報名日期：2015/03/02 (一) ~ 2015/03/11 (三)</p></div>
+							</div>
+						</div>
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/apply-black.png" class="icon" alt="報名方式" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>報名方式：透過線上表單報名</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="row tabled-row">
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/money-black.png" class="icon" alt="正取繳費" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>正取繳費：2015/03/02 (一) ~ 2015/03/13 (五) 中午 12:00 ~ 13:00，六日不開放繳費</p></div>
+							</div>
+						</div>
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/money-black.png" class="icon" alt="備取繳費" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>備取繳費：2015/03/15 (一) ~ 2015/03/17 (三) 中午 12:00 ~ 13:00</p></div>
+							</div>
+						</div>
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/location-black.png" class="icon" alt="繳費地點" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>繳費地點：中興大學學生活動中心 1F 攝影社暗房</p></div>
+							</div>
+						</div>
+					</div>
+					<div class="row tabled-row">
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/info-black.png" class="icon" alt="備註" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>1. 愈早報名優先錄取，逾 28 人後將列為備取<br>2. 線上報名成功者將<b>另行通知繳費時間</b><br>3. 外校報名成功者將電話另行通知匯款</p></div>
+							</div>
+						</div>
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/money-black.png" class="icon" alt="退費機制" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>退費機制：<br>1. 活動前一週取消退 50%<br>2. 活動當週取消不予退費<br>3. 如遇不可抗拒之天災人禍，導致本活動取消，本社將於事後通知</p></div>
+							</div>
+						</div>
+						<div class="col-sm-4 tabled-col">
+							<div class="tri-col">
+								<div class="tri-left"><img src="assets/ico/info-black.png" class="icon" alt="備註" /></div>
+								<div class="tri-middle"><div class="black-y-divider"></div></div>
+								<div class="tri-right"><p>如有任何問題，可連絡執行長：曾同學 0920687725、李同學 0972989001，或至攝影社暗房詢問，亦可透過粉絲專業洽詢</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section-4">
+				<div class="container">
+					2016 第 32 屆暗房研習營 Coming soon...
+				</div>
+			</div>
+			<div id="footer">
+				<p>國立中興大學攝影研究社<br>
+				   地址：台中市南區國光路 250 號學生活動中心 1F 攝影社暗房</p>
+			</div>
+		</div>
+	</body>
+</html>

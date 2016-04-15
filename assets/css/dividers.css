@@ -1,0 +1,24 @@
+.white-x-divider, .black-x-divider {
+	height: 1px;
+	width: 100%;
+	background-size: 100% 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.white-x-divider {
+	background-image: url("../img/elements/white-x-divider.png");
+}
+.black-x-divider {
+	background-image: url("../img/elements/black-x-divider.png");
+}
+.white-y-divider, .black-y-divider {
+	height: 100%;
+	width: 1px;
+	background-size: 100% 100%;
+}
+.white-y-divider {
+	background-image: url("../img/elements/white-y-divider.png");
+}
+.black-y-divider {
+	background-image: url("../img/elements/black-y-divider.png");
+}

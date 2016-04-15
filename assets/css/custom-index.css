@@ -1,0 +1,38 @@
+.bottom-header>h1, .bottom-header>p {
+	margin: 0px;
+}
+.jumbotron {
+	background-color: rgba(0, 0, 0, 0);
+}
+.main {
+	top: 50px;
+	height: calc(100% - 50px) !important;
+	min-height: calc(100% - 50px) !important;
+}
+#page-1 {
+	background-image: url("../img/index/image-01.jpg");
+}
+#page-2 {
+	background-image: url("../img/index/image-02.jpg");
+}
+#page-3 {
+	background-image: url("../img/index/image-03.jpg");
+}
+#page-4 {
+	background-image: url("../img/index/image-04.JPG");
+}
+#page-5 {
+	background-image: url("../img/index/image-05.jpg");
+}
+#page-6 {
+	background-image: url("../img/index/image-06.jpg");
+	margin-bottom: 0px;
+}
+@media screen and (max-width: 991px) {
+	.focus-frame>.white-x-divider {
+		height: 100%;
+		width: 1px;
+		background-size: 100% 100%;
+		background-image: url("../img/elements/white-y-divider.png");
+	}
+}

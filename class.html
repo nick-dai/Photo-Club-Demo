@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>社課</title>
+		<!-- jQuery from Google CDN -->
+		<script type="text/javascript" src="assets/jquery/jquery-1.11.3.min.js"></script>
+		<!-- Bootstrap and Javascript from Bootstrap CDN-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Owl Carousel -->
+		<link rel="stylesheet" href="assets/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="assets/owl-carousel/owl.theme.css">
+		<link rel="stylesheet" href="assets/owl-carousel/owl.transitions.css">
+		<script type="text/javascript" src="assets/owl-carousel/owl.carousel.min.js"></script>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/dividers.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/layout-small-header.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/custom-class.css">
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#slideshow").owlCarousel({
+					lazyLoad: true,
+					items: 2,
+					itemsMobile: [768, 1],
+					itemsDesktop: [769, 2],
+					navigation: true, // Show next and prev buttons
+					slideSpeed: 300,
+					paginationSpeed: 400,
+					navigationText: ["上一張", "下一張"]
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top"><!-- Fix navbar on top. -->
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						NCHU Photography Club
+					</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="introduction.html">介紹</a></li>
+						<li class="active"><a href="class.html">社課</a></li>
+						<li><a href="membership.html">社員</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">活動 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="welcomeExpo.html">上學期迎新茶會展</a></li>
+								<li><a href="photoCamp.html">攝影研習營</a></li>
+								<li><a href="welcomeParty.html">下學期迎新茶會</a></li>
+								<li><a href="darkroomCamp.html">暗房研習營</a></li>
+								<li><a href="expo.html">期末成果展</a></li>
+							</ul>
+						</li>
+						<li><a href="gallery.html">成果照片</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="jumbotron" id="header">
+			<div class="container">
+				<h1>社課</h1>
+			</div>
+		</div>
+		<div class="section" id="section-1">
+			<div class="container">
+				<img class="icon" src="assets/ico/gallery-black.png" alt="歷屆社課記錄照" />
+				<h3><b>歷屆社課記錄照</b></h3>
+				<div class="black-x-divider"></div>
+				<div id="slideshow">
+					<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/class/slideshow/image-01.jpg" alt="P1"></div>
+					<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/class/slideshow/image-02.jpg" alt="P2"></div>
+					<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/class/slideshow/image-03.jpg" alt="P3"></div>
+					<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/class/slideshow/image-04.jpg" alt="P4"></div>
+					<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/class/slideshow/image-05.jpg" alt="P5"></div>
+					<div class="item"><img class="img-rounded img-responsive lazyOwl" data-src="assets/img/class/slideshow/image-06.jpg" alt="P6"></div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section-2">
+			<div class="container">
+				<img class="icon" src="assets/ico/time-white.png" alt="時間" />
+				<h3><b>時間</b></h3>
+				<div class="white-x-divider"></div>
+				<p>每週二 19:00~21:00<br>104/11/3, 10, 17 因期中考停課<br>105/1/5, 12 因期末考停課<br>（有幾個禮拜的外拍社課相約在禮拜六唷！）</p>
+			</div>
+		</div>
+		<div class="section" id="section-3">
+			<div class="container">
+				<img class="icon" src="assets/ico/list-black.png" alt="內容" />
+				<h3><b>內容</b></h3>
+				<div class="black-x-divider"></div>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>時間</th>
+							<th>名稱</th>
+						</tr>
+					</thead>
+					<tbody id="class-list">
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="footer">
+			<p>國立中興大學攝影研究社<br>地址：台中市南區國光路 250 號學生活動中心 1F 攝影社暗房</p>
+		</div>
+		<script src="assets/js/class.js"></script>
+	</body>
+</html>
